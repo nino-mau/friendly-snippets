@@ -241,7 +241,7 @@
     },
     "const statement": {
         "prefix": "c",
-        "body": "const ${1:name}"
+        "body": "const ${1:name} = ${2:value}"
     },
     "const statement from destructuring": {
         "prefix": "cd",
