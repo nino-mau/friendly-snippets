@@ -1,6 +1,6 @@
 {
     "comment": {
-        "prefix": "###",
+        "prefix": "ds",
         "body": [
             "\"\"\"",
             "${1:A one-line summary.}",
@@ -30,9 +30,9 @@
             "\"\"\""
         ],
         "description": "A simple Python docstring comment. Useful when you prefer to add the docstrings manually on functions."
-    },    
+    },
     "module docstring": {
-        "prefix": "###module",
+        "prefix": "dsmodule",
         "body": [
             "\"\"\"",
             "${1:A one-line summary.}",
@@ -47,7 +47,7 @@
         "description": "A Python docstring for modules, including a one-line summary, details, and example."
     },
     "test module docstring": {
-        "prefix": "###test",
+        "prefix": "dstest",
         "body": [
             "\"\"\"",
             "${1:A one-line summary.}",
@@ -58,7 +58,7 @@
         "description": "Module-level docstrings for test files are not required. They should be included only when there is additional information that can be provided.\n\nExamples include some specifics on how the test should be run, an explanation of an unusual setup pattern, dependency on the external environment, and so on. Docstrings that do not provide any new information should not be used, such as \"\"\"Tests for foo.bar.\"\"\""
     },
     "function docstring": {
-        "prefix": "###function",
+        "prefix": "dsfunction",
         "body": [
             "\"\"\"",
             "${1:A one-line summary.}",
@@ -79,7 +79,7 @@
         "description": "A Python docstring for functions and methods, including short summary, details, args, returns, and example."
     },
     "function docstring typed": {
-        "prefix": "###function_typed",
+        "prefix": "dsfunction_typed",
         "body": [
             "\"\"\"",
             "${1:A one-line summary.}",
@@ -100,7 +100,7 @@
         "description": "Alternative Python docstring for functions and methods, with a different type syntax. Some teams prefer it."
     },
     "generator docstring": {
-        "prefix": "###generator",
+        "prefix": "dsgenerator",
         "body": [
             "\"\"\"",
             "${1:A one-line summary.}",
@@ -121,7 +121,7 @@
         "description": "A Python docstring for generator methods, including a one-line summary, details, parameters, yields, and example. It is the same, but it has yields instead of returns."
     },
     "class docstring": {
-        "prefix": "###class",
+        "prefix": "dsclass",
         "body": [
             "\"\"\"",
             "${1:A one-line summary.}",
@@ -135,7 +135,7 @@
         "description": "A Python docstring for classes, including a one-line summary, details, attributes, and returns."
     },
     "exception docstring": {
-        "prefix": "###exception",
+        "prefix": "dsexception",
         "body": [
             "\"\"\"",
             "${1:A one-line summary.}",
@@ -149,12 +149,8 @@
         "description": "A Python docstring for exceptions, including a one-line summary, description, and attributes."
     },
     "raises docstring": {
-        "prefix": "###raises",
-        "body": [
-            "Raises:",
-            "    ${1:ErrorName}: ${2:Error description.}$0"
-        ],
+        "prefix": "dsraises",
+        "body": ["Raises:", "    ${1:ErrorName}: ${2:Error description.}$0"],
         "description": "A Python docstring for methods when we want to be exclicit about the errors it Raises. Use it only when is relevant."
     }
-
 }
