@@ -1,6 +1,6 @@
 {
     "comment": {
-        "prefix": "/**",
+        "prefix": "doc",
         "body": [
             "/**",
             " * ${1:What it does.}",
@@ -18,11 +18,7 @@
     },
     "comment simple": {
         "prefix": "/*",
-        "body": [
-            "/**", 
-            " * ${1:Comment.}$0", 
-            " */"
-        ],
+        "body": ["/**", " * ${1:Comment.}$0", " */"],
         "description": "A simple TSDoc comment."
     },
     "alpha": {
